@@ -1,0 +1,4 @@
+GET http://localhost:9090/api/customer/53506daf
+Accept: application/json
+
+###
