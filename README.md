@@ -1,4 +1,4 @@
-# Interbank Interview Challenge
+# Interbank Backend Challenge
 
 Este proyecto es el desarrollo de un par de servicios, los cuales son: para la consulta y actualización de un cliente. 
 Los datos están almacenados en una base de datos en memoria (H2Db Engine) y está desarrollado con Spring Boot.
