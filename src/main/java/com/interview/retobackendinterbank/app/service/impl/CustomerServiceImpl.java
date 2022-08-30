@@ -1,5 +1,6 @@
 package com.interview.retobackendinterbank.app.service.impl;
 
+import com.interview.retobackendinterbank.app.config.ApiRequestException;
 import com.interview.retobackendinterbank.app.config.ResourceNotFoundException;
 import com.interview.retobackendinterbank.app.model.dto.RequestCustomerDto;
 import com.interview.retobackendinterbank.app.model.dto.ResponseCustomerDto;
@@ -35,7 +36,7 @@ public class CustomerServiceImpl implements CustomerService {
     @Transactional
     public ResponseCustomerDto updateCustomer(Long id, RequestCustomerDto customerDto) {
         Customer customer = repository.findById(id)
-                .orElseThrow(() -> new ResourceNotFoundException("Resource not found", HttpStatus.NOT_FOUND));
+                .orElseThrow(() -> new ApiRequestException(String.format("No existe el cliente con id: %d", id)));
         customer.setNames(customerDto.getNombres());
         customer.setLastNames(customerDto.getApellidos());
         customer.setDocumentType(customerDto.getTipoDocumento());

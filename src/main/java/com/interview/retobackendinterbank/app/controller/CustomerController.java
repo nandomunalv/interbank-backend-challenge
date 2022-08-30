@@ -1,5 +1,6 @@
 package com.interview.retobackendinterbank.app.controller;
 
+import com.interview.retobackendinterbank.app.config.ApiRequestException;
 import com.interview.retobackendinterbank.app.config.ResourceNotFoundException;
 import com.interview.retobackendinterbank.app.model.dto.RequestCustomerDto;
 import com.interview.retobackendinterbank.app.model.dto.ResponseCustomerDto;
@@ -30,8 +31,11 @@ public class CustomerController {
             consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_PROBLEM_JSON_VALUE},
             produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_PROBLEM_JSON_VALUE})
     public ResponseEntity<ResponseCustomerDto> updateCustomer(@PathVariable("id") Long id,
-                                                              @Valid @RequestBody RequestCustomerDto customerDto) throws ResourceNotFoundException {
+                                                              @Valid @RequestBody RequestCustomerDto customerDto)
+            throws ApiRequestException {
         return ResponseEntity.ok(service.updateCustomer(id, customerDto));
     }
+
+
 
 }
