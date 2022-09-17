@@ -1,11 +1,9 @@
 package com.interview.retobackendinterbank.app.model.entity;
 
 import lombok.*;
-import org.hibernate.Hibernate;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Objects;
 
 @Getter
 @Setter

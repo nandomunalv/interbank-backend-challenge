@@ -1,16 +1,13 @@
 package com.interview.retobackendinterbank.app.service.impl;
 
 import com.interview.retobackendinterbank.app.config.ApiRequestException;
-import com.interview.retobackendinterbank.app.config.ResourceNotFoundException;
 import com.interview.retobackendinterbank.app.model.dto.RequestCustomerDto;
 import com.interview.retobackendinterbank.app.model.dto.ResponseCustomerDto;
 import com.interview.retobackendinterbank.app.model.entity.Customer;
 import com.interview.retobackendinterbank.app.model.mapper.CustomerMapper;
 import com.interview.retobackendinterbank.app.repository.CustomerRepository;
 import com.interview.retobackendinterbank.app.service.CustomerService;
-import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
-
 import org.springframework.transaction.annotation.Transactional;
 
 @Service

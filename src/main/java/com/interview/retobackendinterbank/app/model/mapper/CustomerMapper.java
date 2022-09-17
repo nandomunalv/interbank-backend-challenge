@@ -1,9 +1,7 @@
 package com.interview.retobackendinterbank.app.model.mapper;
 
-import com.interview.retobackendinterbank.app.model.dto.RequestCustomerDto;
 import com.interview.retobackendinterbank.app.model.dto.ResponseCustomerDto;
 import com.interview.retobackendinterbank.app.model.entity.Customer;
-import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.ReportingPolicy;

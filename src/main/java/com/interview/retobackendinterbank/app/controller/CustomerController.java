@@ -1,7 +1,6 @@
 package com.interview.retobackendinterbank.app.controller;
 
 import com.interview.retobackendinterbank.app.config.ApiRequestException;
-import com.interview.retobackendinterbank.app.config.ResourceNotFoundException;
 import com.interview.retobackendinterbank.app.model.dto.RequestCustomerDto;
 import com.interview.retobackendinterbank.app.model.dto.ResponseCustomerDto;
 import com.interview.retobackendinterbank.app.service.CustomerService;
