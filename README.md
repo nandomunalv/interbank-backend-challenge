@@ -34,7 +34,7 @@ Ya clonado, abrimos el proyecto en nuestra IDE de preferencia e iniciamos el pro
 GET
 > http://localhost:9090/api/customer/53506daf
 
-POST
+PUT
 > http://localhost:9090/api/customer/1
 Body
 {
